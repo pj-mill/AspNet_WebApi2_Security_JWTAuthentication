@@ -12,8 +12,6 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.DataAccessLayer.Ent
     {
         public PersonConfiguration()
         {
-            // N.B. ApplicationUser relationionship defined in 'ApplicationUserConfiguration'
-
             // Define Primary Key
             HasKey(p => p.ApplicationUserId);
 
@@ -28,6 +26,7 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.DataAccessLayer.Ent
             Property(p => p.FirstName).HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute("IDX_PERSON_FIRSTNAME") { IsUnique = false }));
             Property(p => p.LastName).HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute("IDX_PERSON_LASTNAME") { IsUnique = false }));
 
+            // Define relationship with 'ApplicationUser'
             this.HasRequired(a => a.ApplicationUser).WithRequiredDependent(a => a.Person);
         }
     }

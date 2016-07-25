@@ -10,8 +10,7 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.DataAccessLayer.Ent
     {
         public ApplicationUserConfiguration()
         {
-            // Make 'Person' a required dependent
-            //this.HasOptional(a => a.Person).WithOptionalDependent(p => p.ApplicationUser);
+            // Relationship with 'Person' entity defined in 'PersonConfiguration'
         }
     }
 }
