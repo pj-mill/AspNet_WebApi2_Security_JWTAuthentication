@@ -113,6 +113,7 @@
     <Compile Include="Validators\UserPasswordValidator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Config\JWT\" />
     <Folder Include="Config\OAuth\" />
     <Folder Include="Services\Email\" />
     <Folder Include="Services\OAuth\" />

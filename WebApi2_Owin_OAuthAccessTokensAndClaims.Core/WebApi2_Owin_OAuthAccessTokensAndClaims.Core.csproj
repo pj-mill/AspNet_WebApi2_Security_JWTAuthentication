@@ -139,10 +139,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config\CORSConfiguration.cs" />
+    <Compile Include="Config\JSONMediaTypeConfiguration.cs" />
+    <Compile Include="Config\RouteConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Config\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
   <PropertyGroup>
