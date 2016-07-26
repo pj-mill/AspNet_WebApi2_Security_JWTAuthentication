@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Validators
+namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.Validators
 {
     public class UserPasswordValidator : PasswordValidator
     {

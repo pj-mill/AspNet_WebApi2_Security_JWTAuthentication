@@ -3,10 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Managers;
-using WebApi2_Owin_OAuthAccessTokensAndClaims.Models.DomainEntities.Identity;
+using WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.Managers;
+using WebApi2_Owin_OAuthAccessTokensAndClaims.Models.Identity.Entities;
 
-namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Validators
+namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.Validators
 {
     /// <summary>
     /// Responsible for validating user name and email

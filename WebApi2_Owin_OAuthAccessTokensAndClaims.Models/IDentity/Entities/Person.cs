@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebApi2_Owin_OAuthAccessTokensAndClaims.Models.DomainEntities.Identity
+namespace WebApi2_Owin_OAuthAccessTokensAndClaims.Models.Identity.Entities
 {
     public class Person
     {

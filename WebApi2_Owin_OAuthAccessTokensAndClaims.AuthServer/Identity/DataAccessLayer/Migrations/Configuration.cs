@@ -1,9 +1,9 @@
-namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.DataAccessLayer
+namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.DataAccessLayer.Migrations
 {
     using Contexts;
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
-    using Models.DomainEntities.Identity;
+    using Models.Identity.Entities;
     using System;
     using System.Data.Entity.Migrations;
     using System.Linq;
@@ -13,7 +13,7 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.DataAccessLayer
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            MigrationsDirectory = @"DataAccessLayer\Migrations";
+            MigrationsDirectory = @"Identity\DataAccessLayer\Migrations";
         }
 
         protected override void Seed(ApplicationDbContext context)
@@ -86,7 +86,6 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.DataAccessLayer
             appManager.AddToRoles(user1.Id, new string[] { "SuperAdmin", "Admin", "User" });
             appManager.AddToRoles(user2.Id, new string[] { "Admin", "User" });
             appManager.AddToRoles(user3.Id, new string[] { "User" });
-
         }
     }
 }

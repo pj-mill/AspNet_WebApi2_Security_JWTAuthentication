@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.Infrastructure.Annotations;
 using System.Data.Entity.ModelConfiguration;
-using WebApi2_Owin_OAuthAccessTokensAndClaims.Models.DomainEntities.Identity;
+using WebApi2_Owin_OAuthAccessTokensAndClaims.Models.Identity.Entities;
 
-namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.DataAccessLayer.EntityConfigurations
+namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.DataAccessLayer.EntityConfigurations
 {
     /// <summary>
     /// Configuration settings for the 'Person' entity set.

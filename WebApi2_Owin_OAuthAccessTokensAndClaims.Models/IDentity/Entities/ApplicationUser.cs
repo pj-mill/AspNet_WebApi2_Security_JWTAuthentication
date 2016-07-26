@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace WebApi2_Owin_OAuthAccessTokensAndClaims.Models.DomainEntities.Identity
+namespace WebApi2_Owin_OAuthAccessTokensAndClaims.Models.Identity.Entities
 {
     public class ApplicationUser : IdentityUser
     {

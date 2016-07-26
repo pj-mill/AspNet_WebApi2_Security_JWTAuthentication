@@ -5,18 +5,18 @@ using System.Configuration;
 using System.IdentityModel.Tokens;
 using Thinktecture.IdentityModel.Tokens;
 
-namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Config.JWT
+namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.OAuth.Formats
 {
     /// <summary>
     /// Responsible for formatting our JWT Token.
     /// By doing this, the requester for an OAuth 2.0 access token from our API will receive a signed token which contains 
     /// claims for an authenticated Resource Owner (User) and this access token is intended only for a certain (Audience) as well.
     /// </summary>
-    public class JWTDataFormat : ISecureDataFormat<AuthenticationTicket>
+    public class JWTDataFormatConfiguration : ISecureDataFormat<AuthenticationTicket>
     {
         private readonly string issuer = string.Empty;
 
-        public JWTDataFormat(string issuer)
+        public JWTDataFormatConfiguration(string issuer)
         {
             this.issuer = issuer;
         }

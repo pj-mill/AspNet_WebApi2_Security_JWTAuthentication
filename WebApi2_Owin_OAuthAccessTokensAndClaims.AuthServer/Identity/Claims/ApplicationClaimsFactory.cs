@@ -2,9 +2,9 @@
 using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using WebApi2_Owin_OAuthAccessTokensAndClaims.Models.DomainEntities.Identity;
+using WebApi2_Owin_OAuthAccessTokensAndClaims.Models.Identity.Entities;
 
-namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Claims
+namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.Claims
 {
     /// <summary>
     /// Responsible for generating claims for app users

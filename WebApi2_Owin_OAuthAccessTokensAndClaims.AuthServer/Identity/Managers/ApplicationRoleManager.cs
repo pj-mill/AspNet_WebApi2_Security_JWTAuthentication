@@ -2,9 +2,9 @@
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
-using WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.DataAccessLayer.Contexts;
+using WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.DataAccessLayer.Contexts;
 
-namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Managers
+namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.Managers
 {
     /// <summary>
     /// Responsible for managing instances of the 'Role' class

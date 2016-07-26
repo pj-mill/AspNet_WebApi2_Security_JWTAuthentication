@@ -4,13 +4,17 @@ using System.Collections.Concurrent;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Cryptography;
 
-namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Services.OAuth
+namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.OAuth.Services
 {
     /// <summary>
     /// Responsible for creating audience id's & secure keys (for resource servers)
     /// </summary>
     public class AudienceKeyService
     {
+        // N.B. FOR THIS EXERCISE WE ARE JUST TAKING THE KEY FROM APP SETTINGS
+        //      THIS MODULE WAS USED TO GENERATE THAT KEY, AND WOULD BE USED IN A CASE WHERE MULTIPLE RESOURCES
+        //      SERVERS REQUIRED A UNIQUE KEY.
+
         // In Memory list of audience keys
         private static ConcurrentDictionary<string, Audience> AudiencesList = new ConcurrentDictionary<string, Audience>();
 

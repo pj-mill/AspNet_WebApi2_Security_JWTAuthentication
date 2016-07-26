@@ -57,13 +57,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DomainEntities\Identity\ApplicationUser.cs" />
-    <Compile Include="DomainEntities\Identity\Person.cs" />
+    <Compile Include="IDentity\Entities\ApplicationUser.cs" />
+    <Compile Include="IDentity\Entities\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="RequestModels\" />
-    <Folder Include="ResponseModels\" />
+    <Folder Include="IDentity\RequestModels\" />
+    <Folder Include="IDentity\ResponseModels\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,16 +1,12 @@
 ﻿using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.OAuth;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
-using WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Managers;
-using WebApi2_Owin_OAuthAccessTokensAndClaims.Models.DomainEntities.Identity;
+using WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.Managers;
+using WebApi2_Owin_OAuthAccessTokensAndClaims.Models.Identity.Entities;
 
-namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Services.OAuth
+namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.OAuth.Services
 {
     public class OAuthAuthorizationService : OAuthAuthorizationServerProvider
     {

@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
-using WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.DataAccessLayer.EntityConfigurations;
-using WebApi2_Owin_OAuthAccessTokensAndClaims.Models.DomainEntities.Identity;
+using WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.DataAccessLayer.EntityConfigurations;
+using WebApi2_Owin_OAuthAccessTokensAndClaims.Models.Identity.Entities;
 
-namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.DataAccessLayer.Contexts
+namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.DataAccessLayer.Contexts
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
