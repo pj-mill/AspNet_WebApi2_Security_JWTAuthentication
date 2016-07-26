@@ -137,6 +137,7 @@
     <Compile Include="Managers\ApplicationUserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\OAuth\AudienceKeyService.cs" />
+    <Compile Include="Services\OAuth\OAuthAuthorizationService.cs" />
     <Compile Include="Validators\UserNameValidator.cs" />
     <Compile Include="Validators\UserPasswordValidator.cs" />
   </ItemGroup>
