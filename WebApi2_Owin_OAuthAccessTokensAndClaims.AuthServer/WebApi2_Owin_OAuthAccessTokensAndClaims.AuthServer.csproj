@@ -97,6 +97,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Claims\ApplicationClaimsFactory.cs" />
     <Compile Include="DataAccessLayer\Configuration.cs" />
     <Compile Include="DataAccessLayer\Contexts\ApplicationDbContext.cs" />
     <Compile Include="DataAccessLayer\EntityConfigurations\ApplicationUserConfiguration.cs" />
@@ -107,13 +108,13 @@
     </Compile>
     <Compile Include="Managers\ApplicationUserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Validators\UsernameValidator.cs" />
+    <Compile Include="Validators\UserNameValidator.cs" />
     <Compile Include="Validators\UserPasswordValidator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Claims\" />
     <Folder Include="Config\OAuth\" />
     <Folder Include="Services\Email\" />
+    <Folder Include="Services\OAuth\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">

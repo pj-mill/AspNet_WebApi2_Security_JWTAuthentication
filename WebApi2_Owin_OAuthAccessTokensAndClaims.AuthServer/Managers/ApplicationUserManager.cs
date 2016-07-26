@@ -3,6 +3,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.DataAccessLayer.Contexts;
+using WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Validators;
 using WebApi2_Owin_OAuthAccessTokensAndClaims.Models.DomainEntities.Identity;
 
 namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Managers
@@ -33,6 +34,11 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Managers
             // Create an instance of AppManager
             var appManager = new ApplicationUserManager(new UserStore<ApplicationUser>(dbContext));
 
+            // Configure validation logic for passwords
+            appManager.PasswordValidator = new UserPasswordValidator();
+
+            // Configure validation logic for usernames
+            appManager.UserValidator = new UserNameValidator(appManager);
 
 
 
