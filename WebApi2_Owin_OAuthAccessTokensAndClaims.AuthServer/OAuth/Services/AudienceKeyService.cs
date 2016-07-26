@@ -12,8 +12,8 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.OAuth.Services
     public class AudienceKeyService
     {
         // N.B. FOR THIS EXERCISE WE ARE JUST TAKING THE KEY FROM APP SETTINGS
-        //      THIS MODULE WAS USED TO GENERATE THAT KEY, AND WOULD BE USED IN A CASE WHERE MULTIPLE RESOURCES
-        //      SERVERS REQUIRED A UNIQUE KEY.
+        //      THIS MODULE WAS USED TO GENERATE THAT KEY, AND COULD BE USED IN A CASE WHERE MULTIPLE RESOURCES
+        //      SERVERS REQUIRE A UNIQUE KEY. IN SUCH A CASE YOU WOULD NEED TO KEEP TRACK OF A COLLECTION OF KEYS.
 
         // In Memory list of audience keys
         private static ConcurrentDictionary<string, Audience> AudiencesList = new ConcurrentDictionary<string, Audience>();
