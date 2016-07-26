@@ -13,7 +13,7 @@ using WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.OAuth.Services;
 
 namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Config
 {
-    public class OAuthConfiguration
+    public class OAuthServerConfigurations
     {
         public static void Register(IAppBuilder app)
         {
