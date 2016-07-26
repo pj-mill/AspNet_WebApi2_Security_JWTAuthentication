@@ -22,20 +22,34 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Claims
         {
             var ci = await base.CreateAsync(manager, user, authenticationType);
 
-            // Authorization level claim
+            /*---------------------------------------------------------------------------------
+            Authorization level claim
+            ---------------------------------------------------------------------------------*/
             ci.AddClaim(CreateClaim("level", user.Person.Level.ToString()));
 
-            // Full Time Employee Claim
+            /*---------------------------------------------------------------------------------
+            Full Time Employee Claim
+            ---------------------------------------------------------------------------------*/
             var daysInWork = (DateTime.Now.Date - user.Person.JoinDate).TotalDays;
 
             if (daysInWork > 90)
             {
                 ci.AddClaim(CreateClaim("FTE", "1"));
-
             }
             else
             {
                 ci.AddClaim(CreateClaim("FTE", "0"));
+            }
+
+            /*---------------------------------------------------------------------------------
+            Incident Resolver claim
+            ---------------------------------------------------------------------------------*/
+            if (ci.HasClaim(x => x.Type == "role" && x.Value == "Admin"))
+            {
+                if (daysInWork > 90)
+                {
+                    ci.AddClaim(CreateClaim(ClaimTypes.Role, "IncidentResolver"));
+                }
             }
 
             return ci;
