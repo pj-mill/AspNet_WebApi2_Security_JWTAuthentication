@@ -12,11 +12,11 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.OAuth.Formats
     /// By doing this, the requester for an OAuth 2.0 access token from our API will receive a signed token which contains 
     /// claims for an authenticated Resource Owner (User) and this access token is intended only for a certain (Audience) as well.
     /// </summary>
-    public class JWTDataFormatConfiguration : ISecureDataFormat<AuthenticationTicket>
+    public class JWTDataFormat : ISecureDataFormat<AuthenticationTicket>
     {
         private readonly string issuer = string.Empty;
 
-        public JWTDataFormatConfiguration(string issuer)
+        public JWTDataFormat(string issuer)
         {
             this.issuer = issuer;
         }

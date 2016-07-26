@@ -124,6 +124,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Identity\Claims\ApplicationClaimsFactory.cs" />
+    <Compile Include="Identity\DataAccessLayer\Migrations\201607262326355_InitialCreate.cs" />
+    <Compile Include="Identity\DataAccessLayer\Migrations\201607262326355_InitialCreate.Designer.cs">
+      <DependentUpon>201607262326355_InitialCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Identity\DataAccessLayer\Migrations\Configuration.cs" />
     <Compile Include="OAuth\Formats\JWTDataFormat.cs" />
     <Compile Include="OAuth\Config\ServerConfigurations.cs" />
@@ -140,7 +144,11 @@
     <Compile Include="Identity\Validators\UserNameValidator.cs" />
     <Compile Include="Identity\Validators\UserPasswordValidator.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Identity\DataAccessLayer\Migrations\201607262326355_InitialCreate.resx">
+      <DependentUpon>201607262326355_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
       <SubType>Designer</SubType>
