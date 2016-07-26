@@ -1,7 +1,9 @@
 ﻿using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.DataHandler.Encoder;
 using System;
-using System.IdentityModel.Tokens.Jwt;
+using System.Configuration;
+using System.IdentityModel.Tokens;
+using Thinktecture.IdentityModel.Tokens;
 
 namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Config.JWT
 {
@@ -18,8 +20,6 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Config.JWT
         {
             this.issuer = issuer;
         }
-
-        public object ConfigurationManager { get; private set; }
 
         public string Protect(AuthenticationTicket data)
         {
