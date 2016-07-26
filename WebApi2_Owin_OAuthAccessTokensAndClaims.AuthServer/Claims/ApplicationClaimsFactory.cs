@@ -38,7 +38,6 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Claims
                 ci.AddClaim(CreateClaim("FTE", "0"));
             }
 
-
             return ci;
         }
 
