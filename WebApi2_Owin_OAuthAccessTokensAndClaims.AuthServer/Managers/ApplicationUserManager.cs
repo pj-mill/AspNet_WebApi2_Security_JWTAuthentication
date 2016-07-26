@@ -19,10 +19,8 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Managers
         }
 
         /// <summary>
-        /// Our OWIN middleware will create an instance of'ApplicationUserManager' per request
-        /// Uses the Owin middleware to create instances of 'ApplicationUserManager' for each request where
-        /// Identity data is accessed, this will help us to hide the details of how IdentityUser is stored 
-        /// throughout the application.
+        /// Our OWIN middleware will create an instance of'ApplicationUserManager' per request where Identity data is accessed, 
+        /// this will help us to hide the details of how IdentityUser is stored throughout the application.
         /// </summary>
         /// <param name="options"></param>
         /// <param name="context"></param>
