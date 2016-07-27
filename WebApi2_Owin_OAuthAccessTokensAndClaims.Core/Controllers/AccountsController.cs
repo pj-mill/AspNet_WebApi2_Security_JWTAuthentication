@@ -125,6 +125,7 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.Core.Controllers
                 Create user
             ----------------------------------------------------------------------------*/
             var user = UserModelFactory.Create(model);
+            user.EmailConfirmed = true; // For this exercise, we will auto confirm user (comment out if you want to use email confirmation)
 
             IdentityResult addUserResult = await this.AppManager.CreateAsync(user, model.Password);
 
@@ -141,10 +142,12 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.Core.Controllers
             /*----------------------------------------------------------------------------
                 Send confirmation email
             ----------------------------------------------------------------------------*/
+            /*
+             * // UNCOMMENT THIS IF YOU WANT TO FORCE USER TO CONFIRM THEIR EMAIL
             string code = await this.AppManager.GenerateEmailConfirmationTokenAsync(user.Id);
             var callbackUrl = new Uri(Url.Link("ConfirmEmailRoute", new { userId = user.Id, code = code }));
             await this.AppManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
-
+            */
             /*----------------------------------------------------------------------------
                 Return 'OK' with user uri
             ----------------------------------------------------------------------------*/

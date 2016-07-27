@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2_Owin_OAuthAccessTokensAndClaims.Core", "WebApi2_Owin_OAuthAccessTokensAndClaims.Core\WebApi2_Owin_OAuthAccessTokensAndClaims.Core.csproj", "{9516EC80-6E66-4EE3-B667-553C057364D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2_Owin_OAuthAccessTokensAndClaims.DataAccessLayer", "WebApi2_Owin_OAuthAccessTokensAndClaims.DataAccessLayer\WebApi2_Owin_OAuthAccessTokensAndClaims.DataAccessLayer.csproj", "{AD819C99-8880-448E-8A7C-7DCC0B88342E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2_Owin_OAuthAccessTokensAndClaims.Models", "WebApi2_Owin_OAuthAccessTokensAndClaims.Models\WebApi2_Owin_OAuthAccessTokensAndClaims.Models.csproj", "{71A315CC-AF52-4BFC-A6E6-4655820DA22B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer", "WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer\WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.csproj", "{740167B3-63CC-44DB-A77D-4E4D1E4174E5}"
@@ -23,10 +21,6 @@ Global
 		{9516EC80-6E66-4EE3-B667-553C057364D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9516EC80-6E66-4EE3-B667-553C057364D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9516EC80-6E66-4EE3-B667-553C057364D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD819C99-8880-448E-8A7C-7DCC0B88342E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD819C99-8880-448E-8A7C-7DCC0B88342E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD819C99-8880-448E-8A7C-7DCC0B88342E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD819C99-8880-448E-8A7C-7DCC0B88342E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{71A315CC-AF52-4BFC-A6E6-4655820DA22B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{71A315CC-AF52-4BFC-A6E6-4655820DA22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71A315CC-AF52-4BFC-A6E6-4655820DA22B}.Release|Any CPU.ActiveCfg = Release|Any CPU

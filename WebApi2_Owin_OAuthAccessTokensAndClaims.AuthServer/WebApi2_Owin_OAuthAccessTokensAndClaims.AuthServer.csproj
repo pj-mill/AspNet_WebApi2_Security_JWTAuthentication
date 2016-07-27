@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Identity\Attributes\AdminOnlyAttribute.cs" />
+    <Compile Include="Identity\Attributes\ClaimsAuthorizationAttribute.cs" />
     <Compile Include="Identity\Claims\ApplicationClaimsFactory.cs" />
     <Compile Include="Identity\DataAccessLayer\Migrations\201607262326355_InitialCreate.cs" />
     <Compile Include="Identity\DataAccessLayer\Migrations\201607262326355_InitialCreate.Designer.cs">
