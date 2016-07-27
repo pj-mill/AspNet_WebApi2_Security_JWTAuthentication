@@ -123,12 +123,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Identity\Attributes\AdminOnlyAttribute.cs" />
     <Compile Include="Identity\Claims\ApplicationClaimsFactory.cs" />
     <Compile Include="Identity\DataAccessLayer\Migrations\201607262326355_InitialCreate.cs" />
     <Compile Include="Identity\DataAccessLayer\Migrations\201607262326355_InitialCreate.Designer.cs">
       <DependentUpon>201607262326355_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Identity\DataAccessLayer\Migrations\Configuration.cs" />
+    <Compile Include="Identity\Helpers\RoleNames.cs" />
     <Compile Include="Identity\ModelFactories\ApplicationUserModelFactory.cs" />
     <Compile Include="Identity\ModelFactories\RoleModelFactory.cs" />
     <Compile Include="OAuth\Formats\JWTDataFormat.cs" />
@@ -140,7 +142,6 @@
     <Compile Include="Identity\Managers\ApplicationUserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Identity\Communication\Email\GmailSMTPService.cs" />
-    <Compile Include="Identity\Communication\Email\SMTPServiceBase.cs" />
     <Compile Include="OAuth\Services\AudienceKeyService.cs" />
     <Compile Include="OAuth\Services\OAuthAuthorizationService.cs" />
     <Compile Include="Identity\Validators\UserNameValidator.cs" />
@@ -163,6 +164,7 @@
       <Name>WebApi2_Owin_OAuthAccessTokensAndClaims.Models</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
