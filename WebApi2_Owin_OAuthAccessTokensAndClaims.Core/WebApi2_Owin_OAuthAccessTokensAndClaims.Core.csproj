@@ -149,6 +149,8 @@
     <Compile Include="Config\RouteConfiguration.cs" />
     <Compile Include="Controllers\Abstract\BaseApiController.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
+    <Compile Include="Controllers\ClaimsController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
