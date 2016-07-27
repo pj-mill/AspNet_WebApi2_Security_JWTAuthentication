@@ -129,6 +129,8 @@
       <DependentUpon>201607262326355_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Identity\DataAccessLayer\Migrations\Configuration.cs" />
+    <Compile Include="Identity\ModelFactories\ApplicationUserModelFactory.cs" />
+    <Compile Include="Identity\ModelFactories\RoleModelFactory.cs" />
     <Compile Include="OAuth\Formats\JWTDataFormat.cs" />
     <Compile Include="OAuth\Config\OAuthServerConfigurations.cs" />
     <Compile Include="Identity\DataAccessLayer\Contexts\ApplicationDbContext.cs" />

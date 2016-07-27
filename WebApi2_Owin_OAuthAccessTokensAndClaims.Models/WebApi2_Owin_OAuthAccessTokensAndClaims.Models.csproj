@@ -49,6 +49,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,12 +60,16 @@
   <ItemGroup>
     <Compile Include="IDentity\Entities\ApplicationUser.cs" />
     <Compile Include="IDentity\Entities\Person.cs" />
+    <Compile Include="IDentity\RequestModels\ApplicationUserRequestModel.cs" />
+    <Compile Include="IDentity\RequestModels\ClaimsRequestModel.cs" />
+    <Compile Include="IDentity\RequestModels\PasswordChangeRequestModel.cs" />
+    <Compile Include="IDentity\RequestModels\RoleRequestModel.cs" />
+    <Compile Include="IDentity\ResponseModels\ApplicationUserResponseModel.cs" />
+    <Compile Include="IDentity\ResponseModels\RoleResponseModel.cs" />
+    <Compile Include="IDentity\ResponseModels\RoleUsersResponseModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="IDentity\RequestModels\" />
-    <Folder Include="IDentity\ResponseModels\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
