@@ -56,7 +56,7 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.Claims
             return ci;
         }
 
-        private Claim CreateClaim(string type, string value)
+        public static Claim CreateClaim(string type, string value)
         {
             return new Claim(type, value, ClaimValueTypes.String);
         }
