@@ -2,6 +2,7 @@
 using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.Helpers;
 using WebApi2_Owin_OAuthAccessTokensAndClaims.Models.Identity.Entities;
 
 namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.Claims
@@ -48,7 +49,7 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.Claims
             {
                 if (daysInWork > 90)
                 {
-                    ci.AddClaim(CreateClaim(ClaimTypes.Role, "IncidentResolver"));
+                    ci.AddClaim(CreateClaim(ClaimTypes.Role, RoleNames.IncidentResolver));
                 }
             }
 
