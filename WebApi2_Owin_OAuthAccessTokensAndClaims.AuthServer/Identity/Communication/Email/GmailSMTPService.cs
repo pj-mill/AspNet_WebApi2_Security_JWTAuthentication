@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.Services.Communication.Email
 {
+    /// <summary>
+    /// Responsible for sending mail over Gmail's smtp service
+    /// </summary>
     public class GmailSMTPService : IIdentityMessageService
     {
         #region MAIL SETTINGS PROPERTIES
