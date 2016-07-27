@@ -146,12 +146,11 @@
     <Compile Include="Config\CORSConfiguration.cs" />
     <Compile Include="Config\JSONMediaTypeConfiguration.cs" />
     <Compile Include="Config\RouteConfiguration.cs" />
+    <Compile Include="Controllers\Abstract\BaseApiController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer\WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.csproj">
       <Project>{740167b3-63cc-44db-a77d-4e4d1e4174e5}</Project>
