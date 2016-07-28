@@ -14,7 +14,7 @@ The migrations configuration and seed method are available for you to create you
 | 2 | ASP.NET IDentity 2.1 |
 | 3 | Entity Framework 6.1.3 |
 | 4 | OWIN |
-| 5 | Json Web Access Tokens |
+| 5 | OAuth JWT Access Tokens |
 | 6 | C# |
 | 7 | Linq |
 | 8 | Code First |
@@ -27,12 +27,11 @@ The migrations configuration and seed method are available for you to create you
 |-------|--------------|
 |Claims | Implementation of a custom claims factory using the 'ClaimsIdentityFactory' class for creating claims |
 |Claims | Implementation of 'AuthorizationFilterAttribute' that checks if a user has the required claim |
-|Claims | Provision of an extended claims service 'ExtendedClaimsProvider' used for creating claims |
-|User Management| Implemented with 'UserManager'|
-|Roles Management| Implemented with 'RoleManager'|
-|Password Policy| Implemented with 'PasswordValidator'|
-|User Name Policy | Implemented with 'UserValidator'|
-|Email confirmation| Implemented with 'IIdentityMessageService' and Gmail|
+|User Management| Custom implementation with 'UserManager'|
+|Roles Management| Custom implementation with 'RoleManager'|
+|Password Policy| Custom implementation with 'PasswordValidator'|
+|User Name Policy | Custom implementation with 'UserValidator'|
+|Email confirmation| Custom implementation with 'IdentityMessageService' and Gmail|
 |Authorization Server| Authorization server configured with 'OAuthAuthorizationServerOptions' |
 |Resource Server| Resource server authentication configured with 'JwtBearerAuthenticationOptions' |
 |Bearer Access Tokens| Implemented with 'ISecureDataFormat' and OAuth Json Web Tokens (JWT) |
