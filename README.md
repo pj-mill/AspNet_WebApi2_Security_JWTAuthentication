@@ -35,7 +35,18 @@ The seed method is available in the migrations configuration file for you to cre
 |Authorization Server| Authorization server configured with 'OAuthAuthorizationServerOptions' |
 |Resource Server| Resource server authentication configured with 'JwtBearerAuthenticationOptions' |
 |Bearer Access Tokens| Implemented with 'ISecureDataFormat' and OAuth Json Web Tokens (JWT) |
-|Test Client| A console app that implements HttpClient, HttpResponseMessage, HttpRequestMessage, Task & await/async |
+| CQRS | Command & Query Request Segregation implementation with POCO's |
+| CORS | |
+
+---
+####Assembly Layout
+|Assembly|Description|
+|--------|-----------|
+|Models| Contains our POCO's (implements CQRS)|
+|Client| A console app that implements HttpClient, HttpResponseMessage, HttpRequestMessage, Task & await/async to access the endpoints in our server|
+|Core| The core server containing our controllers and endpoints|
+|AuthServer| Contains everything connected with configuring and managing Identity & JWT's|
+
 ---
 
 ####Controller Methods
