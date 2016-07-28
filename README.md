@@ -37,7 +37,7 @@ The seed method is available in the migrations configuration file for you to cre
 |Bearer Access Tokens| Implemented with 'ISecureDataFormat' and OAuth Json Web Tokens (JWT) |
 | CQRS | Command & Query Request Segregation implementation with POCO's |
 | CORS | |
-
+| Attribute routing| |
 ---
 ####Assembly Layout
 |Assembly|Description|
