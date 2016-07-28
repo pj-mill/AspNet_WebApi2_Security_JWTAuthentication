@@ -41,7 +41,7 @@ namespace WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer.Identity.Managers
             appManager.UserValidator = new UserNameValidator(appManager);
 
             // Configure Claims Generation
-            appManager.ClaimsIdentityFactory = new ApplicationClaimsFactory();
+            appManager.ClaimsIdentityFactory = new ApplicationClaimsFactory(dbContext);
 
             // Configure Email Service
             appManager.EmailService = new GmailSMTPService();

@@ -58,6 +58,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client\Error.cs" />
+    <Compile Include="Client\Token.cs" />
+    <Compile Include="Client\User.cs" />
     <Compile Include="IDentity\Entities\ApplicationUser.cs" />
     <Compile Include="IDentity\Entities\Person.cs" />
     <Compile Include="IDentity\RequestModels\ApplicationUserRequestModel.cs" />
