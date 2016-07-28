@@ -43,9 +43,9 @@ The seed method is available in the migrations configuration file for you to cre
 |Assembly|Description|
 |--------|-----------|
 |Models| Contains our POCO's (implements CQRS)|
-|Client| A console app that implements HttpClient, HttpResponseMessage, HttpRequestMessage, Task & await/async to access the endpoints in our server|
-|Core| The core server containing our controllers and endpoints|
+|Core| The core api server containing our controllers and endpoints|
 |AuthServer| Contains everything connected with configuring and managing Identity & JWT's|
+|Client| A console app that implements HttpClient, HttpResponseMessage, HttpRequestMessage, Task & await/async to access the endpoints in our server|
 
 ---
 
