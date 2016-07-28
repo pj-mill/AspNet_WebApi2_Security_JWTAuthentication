@@ -3,7 +3,7 @@ A WebApi2 app built on OWIN middleware that demonstrates how to implement OAuth 
 
 Developed with VS2015 Community, requires Fiddler or POSTMAN to test. 
 
-The migrations configuration and seed method are available for you to create your own database, just change the database connection.
+The seed method is available in the migrations configuration file for you to create your own database, just change the database connection as needed.
 
 ---
 ####Techs
@@ -35,7 +35,7 @@ The migrations configuration and seed method are available for you to create you
 |Authorization Server| Authorization server configured with 'OAuthAuthorizationServerOptions' |
 |Resource Server| Resource server authentication configured with 'JwtBearerAuthenticationOptions' |
 |Bearer Access Tokens| Implemented with 'ISecureDataFormat' and OAuth Json Web Tokens (JWT) |
-
+|Test Client| A console app that implements HttpClient, HttpResponseMessage, HttpRequestMessage, Task & await/async |
 ---
 
 ####Controller Methods
