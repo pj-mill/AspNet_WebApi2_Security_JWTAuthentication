@@ -51,9 +51,7 @@ The seed method is available in the migrations configuration file for you to cre
 
 ####To Test
 
-Run the client assembly. This will test 3 endpoints, there are more endpoints that can be tested, for example: The OrdersController contains an action that allows a user to refund money on an order, however, the user must have the "IncidentResolvers" claim and for that they need to have joined more than 3 months previously so any new users should not be able to perform this action.
-
-Just checkout the controllers...
+Run the client assembly. Although there are many endpoints you can test, this exercise tests only 3 of them; Login, Orders access & refund functionality.
 
 ---
 
