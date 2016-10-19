@@ -1,4 +1,4 @@
-# WebApi2_Owin_OAuthAccessTokenAuthentication
+# AspNet_WebApi2_Security_OAuthJWT
 A WebApi2 app built on OWIN middleware that demonstrates how to implement OAuth JWT's (Access), plus several ways to generate claims on the fly.
 
 Developed with VS2015 Community, requires Fiddler or POSTMAN to test. 
