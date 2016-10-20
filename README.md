@@ -1,11 +1,19 @@
-# AspNet_WebApi2_Security_OAuthJWT
-A WebApi2 app built on OWIN middleware that demonstrates how to implement OAuth JWT's (Access), plus several ways to generate claims on the fly.
+# AspNet_WebApi2_Security_JWTAuthentication
 
-Developed with VS2015 Community, requires Fiddler or POSTMAN to test. 
+---
+
+Developed with Visual Studio 2015 Community.
+
+---
+
+A WebApi2 app built on OWIN middleware that demonstrates how to implement OAuth JWT's (Access), plus several ways to generate claims on the fly.
 
 The seed method is available in the migrations configuration file for you to create your own database, just change the database connection as needed.
 
+Requires Fiddler or POSTMAN to test.
+
 ---
+
 ####Techs
 
 | No.        | Description  |
